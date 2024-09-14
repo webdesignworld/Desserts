@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold">Desserts</h1>
+
+    <div class="container grid grid-cols-[2fr_1fr] gap-2.5 h-screen p-5">
+      <div
+        class="deserts-grid grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2.5"
+      >
+        <div
+          class="dessert_item_waffles dessert_item grid grid-rows-[auto_1fr] gap-2.5"
+        >
+          <img
+            src="./assets/images/image-waffle-desktop.jpg"
+            alt="product_image"
+          />
+
+          <button
+            class="add_to_cart_product border flex flex-row flex-wrap mt-6 rounded-full border-gray-300"
+          >
+            <img
+              class="size-6 ml-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />
+            <p class="font-bold ml-3">Add to cart</p>
+          </button>
+
+          <p>Waffle</p>
+          <h3 class="font-bold">Waffle with Berries</h3>
+          <p class="text-red-600 font-bold">$6.50</p>
+        </div>
+
+        <div class="dessert_item_blulee grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-creme-brulee-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Creme Brulee</p>
+          <h3 class="font-bold">Vanilla Bean Creme Brulee</h3>
+          <p class="text-red-600 font-bold">$7.00</p>
+        </div>
+
+        <div class="dessert_item_macaroon grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-macaron-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Macaron</p>
+          <h3 class="font-bold">Macaron Mix of Five</h3>
+          <p class="text-red-600 font-bold">$8.00</p>
+        </div>
+
+        <div class="dessert_item_tiramisu grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-tiramisu-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Tiramisu</p>
+          <h3 class="font-bold">Classic Tiramisu</h3>
+          <p class="text-red-600 font-bold">$6.50</p>
+        </div>
+
+        <div class="dessert_item_baklava grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-baklava-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Baklava</p>
+          <h3 class="font-bold">Pistachio Baklava</h3>
+          <p class="text-red-600 font-bold">$4.00</p>
+        </div>
+
+        <div class="dessert_item_pie grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-meringue-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Pie</p>
+          <h3 class="font-bold">Lemon Meringue Pie</h3>
+          <p class="text-red-600 font-bold">$5.00</p>
+        </div>
+
+        <div class="dessert_item_cake grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-cake-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Cake</p>
+          <h3 class="font-bold">Red Velvet Cake</h3>
+          <p class="text-red-600 font-bold">$4.50</p>
+        </div>
+
+        <div class="dessert_item_brownie grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-brownie-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Brownie</p>
+          <h3 class="font-bold">Salted Caramel Brownie</h3>
+          <p class="text-red-600 font-bold">$5.50</p>
+        </div>
+
+        <div class="dessert_item_panna grid grid-rows-[auto_1fr] gap-2.5">
+          <img
+            src="./assets/images/image-panna-cotta-desktop.jpg"
+            alt="product_image"
+          />
+          <button
+            class="add_to_cart_product border rounded-full border-gray-300"
+          >
+            <img
+              class="size-6"
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="add_to_cart"
+            />Add to cart
+          </button>
+          <p>Panna Cotta</p>
+          <h3 class="font-bold">Valilla Panna Cotta</h3>
+          <p class="text-red-600">$6.50</p>
+        </div>
+      </div>
+
+      <div class="your-cart">
+        <h2 class="text-red-600 font-bold">Your Cart (0)</h2>
+        <img src="" alt="added_items" />
+        <p>Your added items will appear here</p>
+      </div>
+    </div>
+  </body>
+</html>
